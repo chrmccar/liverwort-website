@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Taxonomic Tree | Liverworts of Tasmania</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+/* Embedded minimal styles for the tree and controls */
+body{ background:#faf9f7; color:#222; font-family: Georgia, serif; line-height:1.55; margin:0; }
+.site-header{ background:#2e5c45; color:#fff; text-align:center; padding:2rem 1.25rem; }
+.site-header h1{ margin:.1rem 0 .4rem; font-size:2rem; }
+.container{ max-width: 1000px; margin: 0 auto; padding: 1.5rem; }
+.site-footer{ background:#e3e1da; text-align:center; padding:1rem; font-size:.95rem; }
+
+.control-bar{ display:flex; flex-wrap:wrap; gap:.5rem; align-items:center; margin:.25rem 0 1rem; }
+.control-bar input[type="search"]{
+  flex:1; min-width: 220px;
+  padding:.6rem .8rem; border:1px solid #dcd9d1; border-radius:8px; background:#fff; font-size:1rem;
+}
+.control-bar button{
+  padding:.55rem 1rem; border:1px solid #dcd9d1; border-radius:8px; background:#fff; font-weight:600; cursor:pointer; transition:all .15s ease;
+}
+.control-bar button:hover{ background:#2e5c45; color:#fff; }
+
+.tree details{
+  border:1px solid #dcd9d1; background:#fff; border-radius:12px; padding:.6rem .9rem; margin:.5rem 0;
+  box-shadow:0 1px 0 rgba(0,0,0,.04), 0 6px 14px rgba(0,0,0,.03);
+}
+.tree summary{ cursor:pointer; font-weight:700; list-style:none; display:flex; align-items:center; gap:.5rem; }
+.tree summary::-webkit-details-marker{ display:none; }
+.tree summary::before{
+  content:"▸"; display:inline-block; width:1rem; margin-right:.3rem; transform:translateY(-1px) rotate(0deg);
+  transition:transform .15s ease; opacity:.8;
+}
+.tree details[open] > summary::before{ transform:translateY(-1px) rotate(90deg); }
+.count-badge{ display:inline-block; min-width:1.75rem; padding:.1rem .45rem; font-size:.85rem; font-weight:700; text-align:center; color:#2e5c45;
+  background:#e7efe9; border:1px solid #d1e0d6; border-radius:999px; }
+.species-list{ margin:.4rem 0 .2rem 1.4rem; padding-left:1rem; }
+.species-list li{ padding:.12rem 0; }
+.species-link{ color:#1f4836; text-decoration:none; border-bottom:1px dotted #9bb5a6; }
+.species-link:hover{ text-decoration:underline; }
+.note{ opacity:.7; font-size:.9rem; }
+</style>
+</head>
+<body>
+  <header class="site-header">
+    <h1>Taxonomic Tree</h1>
+    <p>Collapsible taxonomy tree rendered from your dataset.</p>
+    <nav class="top-nav">
+      <a class="nav-btn" href="index.html">Home</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Browse Hepatics by Taxonomy</h2>
+
+      <div class="control-bar">
+        <input id="treeFilter" type="search" placeholder="Filter (e.g., Lepidozia, Jungermanniales, 'punctatus')" />
+        <button id="clearFilter" type="button">Clear</button>
+        <button id="expandAll" type="button">Expand All</button>
+        <button id="collapseAll" type="button">Collapse All</button>
+      </div>
+
+      <div id="treeRoot" class="tree">
+<details><summary><span class="label">Anthocerotophyta Rothm. ex Stotler &amp; Crand.-Stotl.</span> <span class="count-badge">4</span></summary>
+<details><summary><span class="label">Anthocerotopsida de Bary ex Jancz.</span> <span class="count-badge">4</span></summary>
+<details><summary><span class="label">Anthocerotidae Rosenv.</span> <span class="count-badge">1</span></summary>
+<details><summary><span class="label">Anthocerotales Limpr.</span> <span class="count-badge">1</span></summary>
+<details><summary><span class="label">—</span> <span class="count-badge">1</span></summary>
+<details><summary><span class="label">Anthocerotaceae (Gray) Dumort.</span> <span class="count-badge">1</span></summary>
+<details><summary><span class="label">Anthoceros L.</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/anthoceros_punctatus_l.html" class="species-link">Anthoceros punctatus L.</a></li>
+</ul>
+</details>
+</details>
+</details>
+</details>
+</details>
+<details><summary><span class="label">Dendrocerotidae Duff, J.C.Villarreal, Cargill &amp; Renzaglia</span> <span class="count-badge">2</span></summary>
+<details><summary><span class="label">Dendrocerotales Hässel</span> <span class="count-badge">2</span></summary>
+<details><summary><span class="label">—</span> <span class="count-badge">2</span></summary>
+<details><summary><span class="label">Dendrocerotaceae (Milde) Hässel</span> <span class="count-badge">2</span></summary>
+<details><summary><span class="label">Megaceros Campb.</span> <span class="count-badge">2</span></summary>
+<ul class="species-list">
+<li><a href="species/megaceros_austronesophilus_cargill_seppelt.html" class="species-link">Megaceros austronesophilus Cargill &amp; Seppelt</a></li>
+<li><a href="species/megaceros_gracilis_reichardt_steph.html" class="species-link">Megaceros gracilis (Reichardt) Steph.</a></li>
+</ul>
+</details>
+</details>
+</details>
+</details>
+</details>
+<details><summary><span class="label">Notothylatidae Duff, J.C.Villarreal, Cargill &amp; Renzaglia</span> <span class="count-badge">1</span></summary>
+<details><summary><span class="label">Notothyladales Hyvonen &amp; Piippo</span> <span class="count-badge">1</span></summary>
+<details><summary><span class="label">—</span> <span class="count-badge">1</span></summary>
+<details><summary><span class="label">Notothyladaceae (Milde) Mull.Frib. ex Prosk.</span> <span class="count-badge">1</span></summary>
+<details><summary><span class="label">Phaeoceros Prosk.</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/phaeoceros_carolinianus_michx_prosk.html" class="species-link">Phaeoceros carolinianus (Michx.) Prosk.</a></li>
+</ul>
+</details>
+</details>
+</details>
+</details>
+</details>
+</details>
+</details>
+<details><summary><span class="label">Marchantiophyta Stotler &amp; Crand.-Stotl.</span> <span class="count-badge">381</span></summary>
+<details><summary><span class="label">Haplomitriopsida Stotler &amp; Crand.-Stotl.</span> <span class="count-badge">3</span></summary>
+<details><summary><span class="label">Haplomitriidae Stotler &amp; Crand.-Stotl.</span> <span class="count-badge">1</span></summary>
+<details><summary><span class="label">Calobryales Hamlin</span> <span class="count-badge">1</span></summary>
+<details><summary><span class="label">—</span> <span class="count-badge">1</span></summary>
+<details><summary><span class="label">Haplomitriaceae Dedecek</span> <span class="count-badge">1</span></summary>
+<details><summary><span class="label">Haplomitrium Nees</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/haplomitrium_gibbsiae_steph_rmschust.html" class="species-link">Haplomitrium gibbsiae (Steph.) R.M.Schust.</a></li>
+</ul>
+</details>
+</details>
+</details>
+</details>
+</details>
+<details><summary><span class="label">Treubiidae Stotler &amp; Crand.-Stotl.</span> <span class="count-badge">2</span></summary>
+<details><summary><span class="label">Treubiales Schljakov</span> <span class="count-badge">2</span></summary>
+<details><summary><span class="label">—</span> <span class="count-badge">2</span></summary>
+<details><summary><span class="label">Treubiaceae Verd.</span> <span class="count-badge">2</span></summary>
+<details><summary><span class="label">Treubia K.I.Goebel, nom. cons.</span> <span class="count-badge">2</span></summary>
+<ul class="species-list">
+<li><a href="species/treubia_lacunosa_colenso_prosk.html" class="species-link">Treubia lacunosa (Colenso) Prosk.</a></li>
+<li><a href="species/treubia_tasmanica_rmschust_gamscott.html" class="species-link">Treubia tasmanica R.M.Schust. &amp; G.A.M.Scott</a></li>
+</ul>
+</details>
+</details>
+</details>
+</details>
+</details>
+</details>
+<details><summary><span class="label">Jungermanniopsida Stotler &amp; Crand.-Stotl.</span> <span class="count-badge">351</span></summary>
+<details><summary><span class="label">Jungermanniidae Engl.</span> <span class="count-badge">310</span></summary>
+<details><summary><span class="label">Jungermanniales H.Klinggr.</span> <span class="count-badge">260</span></summary>
+<details><summary><span class="label">Cephaloziineae Schljakov</span> <span class="count-badge">34</span></summary>
+<details><summary><span class="label">Adelanthaceae Grolle</span> <span class="count-badge">9</span></summary>
+<details><summary><span class="label">Adelanthus Mitt., nom. cons.</span> <span class="count-badge">3</span></summary>
+<ul class="species-list">
+<li><a href="species/adelanthus_falcatus_hook_mitt.html" class="species-link">Adelanthus falcatus (Hook.) Mitt.</a></li>
+<li><a href="species/adelanthus_gemmiparus_rmschust_eahodgs.html" class="species-link">Adelanthus gemmiparus (R.M.Schust.) E.A.Hodgs.</a></li>
+<li><a href="species/adelanthus_occlusus_hookf_taylor_carrington.html" class="species-link">Adelanthus occlusus (Hook.f. &amp; Taylor) Carrington</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Pseudomarsupidium Herzog</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/pseudomarsupidium_piliferum_steph_herzog_ex_grolle.html" class="species-link">Pseudomarsupidium piliferum (Steph.) Herzog ex Grolle</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Syzygiella Spruce</span> <span class="count-badge">4</span></summary>
+<ul class="species-list">
+<li><a href="species/syzygiella_colorata_lehm_feldberg_vana_hentsche_heinrichs.html" class="species-link">Syzygiella colorata (Lehm.) Feldberg, Va?n?a, Hentsche &amp; Heinrichs</a></li>
+<li><a href="species/syzygiella_sonderi_gottsche_feldberg_vana_hentsche_heinrichs.html" class="species-link">Syzygiella sonderi (Gottsche) Feldberg, Va?n?a, Hentsche &amp; Heinrichs</a></li>
+<li><a href="species/syzygiella_tasmanica_hookf_taylor_kfeldberg_vana_hentschel_heinrichs.html" class="species-link">Syzygiella tasmanica (Hook.f. &amp; Taylor) K.Feldberg, Va?n?a, Hentschel &amp; Heinrichs</a></li>
+<li><a href="species/syzygiella_teres_carrington_pearson_van_a.html" class="species-link">Syzygiella teres (Carrington &amp; Pearson) Va?n? a</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Wettsteinia Schiffn.</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/wettsteinia_schusteriana_grolle.html" class="species-link">Wettsteinia schusteriana Grolle</a></li>
+</ul>
+</details>
+</details>
+<details><summary><span class="label">Anastrophyllaceae L.Söderstr., De Roo &amp; Hedd.</span> <span class="count-badge">1</span></summary>
+<details><summary><span class="label">Anastrophyllopsis (R.M.Schust.) Va?n? a &amp; L.Söderstr.</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/anastrophyllopsis_subcomplicata_lehm_lindenb_vana_lsderstr.html" class="species-link">Anastrophyllopsis subcomplicata (Lehm. &amp; Lindenb.) Va?n?a &amp; L.Söderstr.</a></li>
+</ul>
+</details>
+</details>
+<details><summary><span class="label">Cephaloziellaceae Douin</span> <span class="count-badge">13</span></summary>
+<details><summary><span class="label">Allisoniella E.A.Hodgs.</span> <span class="count-badge">3</span></summary>
+<ul class="species-list">
+<li><a href="species/allisoniella_nigra_rodway_rmschust.html" class="species-link">Allisoniella nigra (Rodway) R.M.Schust.</a></li>
+<li><a href="species/allisoniella_nigra_subsp_nigra.html" class="species-link">Allisoniella nigra subsp. nigra</a></li>
+<li><a href="species/allisoniella_tasmanica_rmschust.html" class="species-link">Allisoniella tasmanica R.M.Schust.</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Cephalomitrion R.M.Schust</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/cephalomitrion_aterrimum_steph_rmschust.html" class="species-link">Cephalomitrion aterrimum (Steph.) R.M.Schust.</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Cephaloziella (Spruce) Schiffn., nom. cons.</span> <span class="count-badge">7</span></summary>
+<ul class="species-list">
+<li><a href="species/cephaloziella_exiliflora_taylor_douin.html" class="species-link">Cephaloziella exiliflora (Taylor) Douin</a></li>
+<li><a href="species/cephaloziella_hirta_steph_rmschust.html" class="species-link">Cephaloziella hirta (Steph.) R.M.Schust.</a></li>
+<li><a href="species/cephaloziella_levieri_steph_schiffn_ex_douin.html" class="species-link">Cephaloziella levieri (Steph.) Schiffn. ex Douin</a></li>
+<li><a href="species/cephaloziella_muelleriana_rmschust.html" class="species-link">Cephaloziella muelleriana R.M.Schust.</a></li>
+<li><a href="species/cephaloziella_pulcherrima_rmschust.html" class="species-link">Cephaloziella pulcherrima R.M.Schust.</a></li>
+<li><a href="species/cephaloziella_varians_gottsche_steph.html" class="species-link">Cephaloziella varians (Gottsche) Steph.</a></li>
+<li><a href="species/cephaloziella_varians_var_subantarctica_rmschust_rmschust_ex_jjengel.html" class="species-link">Cephaloziella varians var. subantarctica (R.M.Schust.) R.M.Schust. ex J.J.Engel</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Protolophozia (R.M.Schust.) Schljakov</span> <span class="count-badge">2</span></summary>
+<ul class="species-list">
+<li><a href="species/protolophozia_androgyna_rmschust_ex_vana_lsderstr.html" class="species-link">Protolophozia androgyna R.M.Schust. ex Va?n?a &amp; L.Söderstr.</a></li>
+<li><a href="species/protolophozia_tasmanica_rmschust_vana_lsderst.html" class="species-link">Protolophozia tasmanica (R.M.Schust.) Va?n?a &amp; L.Söderst</a></li>
+</ul>
+</details>
+</details>
+<details><summary><span class="label">Scapaniaceae Mig.</span> <span class="count-badge">11</span></summary>
+<details><summary><span class="label">Andrewsianthus R.M.Schust.</span> <span class="count-badge">2</span></summary>
+<ul class="species-list">
+<li><a href="species/andrewsianthus_marionensis_swarnell_grolle.html" class="species-link">Andrewsianthus marionensis (S.W.Arnell) Grolle</a></li>
+<li><a href="species/andrewsianthus_perigonialis_hookf_taylor_rmschust.html" class="species-link">Andrewsianthus perigonialis (Hook.f. &amp; Taylor) R.M.Schust.</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Chaetophyllopsis R.M.Schust.</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/chaetophyllopsis_whiteleggei_carrington_pearson_rmschust.html" class="species-link">Chaetophyllopsis whiteleggei (Carrington &amp; Pearson) R.M.Schust.</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Chandonanthus Mitt.</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/chandonanthus_squarrosus_menzies_ex_hook_mitt.html" class="species-link">Chandonanthus squarrosus (Menzies ex Hook.) Mitt.</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Diplophyllum (Dumort.) Dumort., nom. cons.</span> <span class="count-badge">7</span></summary>
+<ul class="species-list">
+<li><a href="species/diplophyllum_androgynum_jjengel_glmerr.html" class="species-link">Diplophyllum androgynum J.J.Engel &amp; G.L.Merr.</a></li>
+<li><a href="species/diplophyllum_angustifolium_jjengel_glmerr.html" class="species-link">Diplophyllum angustifolium J.J.Engel &amp; G.L.Merr.</a></li>
+<li><a href="species/diplophyllum_dioicum_rmschust.html" class="species-link">Diplophyllum dioicum R.M.Schust.</a></li>
+<li><a href="species/diplophyllum_incrassatum_jjengel_glmerr.html" class="species-link">Diplophyllum incrassatum J.J.Engel &amp; G.L.Merr.</a></li>
+<li><a href="species/diplophyllum_obtusifolium_hook_dumort.html" class="species-link">Diplophyllum obtusifolium (Hook.) Dumort.</a></li>
+<li><a href="species/diplophyllum_obtusifolium_subsp_domesticum_gottsche_vana.html" class="species-link">Diplophyllum obtusifolium subsp. domesticum (Gottsche) Va?n?a</a></li>
+<li><a href="species/diplophyllum_verrucosum_rmschust.html" class="species-link">Diplophyllum verrucosum R.M.Schust.</a></li>
+</ul>
+</details>
+</details>
+</details>
+<details><summary><span class="label">Gymnomitriaceae H.Klinggr.</span> <span class="count-badge">1</span></summary>
+<details><summary><span class="label">Gymnomitriaceae H.Klinggr.</span> <span class="count-badge">1</span></summary>
+<details><summary><span class="label">Herzogobryum Grolle</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/herzogobryum_atrocapillum_hookf_taylor_grolle.html" class="species-link">Herzogobryum atrocapillum (Hook.f. &amp; Taylor) Grolle</a></li>
+</ul>
+</details>
+</details>
+</details>
+<details><summary><span class="label">Jungermanniineae R.M.Schust. ex Stotler &amp; Crand.-Stotl.</span> <span class="count-badge">38</span></summary>
+<details><summary><span class="label">Acrobolbaceae E.A.Hodgs.</span> <span class="count-badge">15</span></summary>
+<details><summary><span class="label">Acrobolbus Nees</span> <span class="count-badge">12</span></summary>
+<ul class="species-list">
+<li><a href="species/acrobolbus_cinerascens_lehm_lindenb_bastow.html" class="species-link">Acrobolbus cinerascens (Lehm. &amp; Lindenb.) Bastow</a></li>
+<li><a href="species/acrobolbus_cinerascens_var_cinerascens.html" class="species-link">Acrobolbus cinerascens var. cinerascens</a></li>
+<li><a href="species/acrobolbus_concinnus_mitt_grolle.html" class="species-link">Acrobolbus concinnus (Mitt.) Grolle</a></li>
+<li><a href="species/acrobolbus_knightii_mitt_briscoe.html" class="species-link">Acrobolbus knightii (Mitt.) Briscoe</a></li>
+<li><a href="species/acrobolbus_ochrophyllus_hookf_taylor_rmschust.html" class="species-link">Acrobolbus ochrophyllus (Hook.f. &amp; Taylor) R.M.Schust.</a></li>
+<li><a href="species/acrobolbus_pseudosaccatus_grolle_briscoe.html" class="species-link">Acrobolbus pseudosaccatus (Grolle) Briscoe</a></li>
+<li><a href="species/acrobolbus_setulosus_mitt_briscoe.html" class="species-link">Acrobolbus setulosus (Mitt.) Briscoe</a></li>
+<li><a href="species/acrobolbus_spinifolius_rmschust.html" class="species-link">Acrobolbus spinifolius R.M.Schust.</a></li>
+<li><a href="species/acrobolbus_surculosus_nees_trevis.html" class="species-link">Acrobolbus surculosus (Nees) Trevis.</a></li>
+<li><a href="species/acrobolbus_tenellus_taylor_ex_lehm_trevis.html" class="species-link">Acrobolbus tenellus (Taylor ex Lehm.) Trevis.</a></li>
+<li><a href="species/acrobolbus_tenellus_var_diversifolius_eahodgs_briscoe.html" class="species-link">Acrobolbus tenellus var. diversifolius (E.A.Hodgs.) Briscoe</a></li>
+<li><a href="species/acrobolbus_tenellus_var_tenellus.html" class="species-link">Acrobolbus tenellus var. tenellus</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Goebelobryum Grolle</span> <span class="count-badge">2</span></summary>
+<ul class="species-list">
+<li><a href="species/goebelobryum_unguiculatum_hookf_taylor_grolle.html" class="species-link">Goebelobryum unguiculatum (Hook.f. &amp; Taylor) Grolle</a></li>
+<li><a href="species/goebelobryum_vermiculare_jjengel_glenny.html" class="species-link">Goebelobryum vermiculare J.J.Engel &amp; Glenny</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Lethocolea Mitt., nom. cons.</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/lethocolea_pansa_taylor_gamscott_kgbeckm.html" class="species-link">Lethocolea pansa (Taylor) G.A.M.Scott &amp; K.G.Beckm</a></li>
+</ul>
+</details>
+</details>
+<details><summary><span class="label">Balantiopsidaceae H.Buch</span> <span class="count-badge">9</span></summary>
+<details><summary><span class="label">Acroscyphella N.Kitag. &amp; Grolle</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/acroscyphella_phoenicorhiza_grolle_nkitag_grolle.html" class="species-link">Acroscyphella phoenicorhiza (Grolle) N.Kitag. &amp; Grolle</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Balantiopsis Mitt.</span> <span class="count-badge">3</span></summary>
+<ul class="species-list">
+<li><a href="species/balantiopsis_convexiuscula_berggr.html" class="species-link">Balantiopsis convexiuscula Berggr.</a></li>
+<li><a href="species/balantiopsis_diplophylla_hookf_taylor_mitt.html" class="species-link">Balantiopsis diplophylla (Hook.f. &amp; Taylor) Mitt.</a></li>
+<li><a href="species/balantiopsis_tumida_berggr.html" class="species-link">Balantiopsis tumida Berggr.</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Eoisotachis R.M.Schust.</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/eoisotachis_nigella_herzog_rmschust.html" class="species-link">Eoisotachis nigella (Herzog) R.M.Schust.</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Isotachis Mitt.</span> <span class="count-badge">4</span></summary>
+<ul class="species-list">
+<li><a href="species/isotachis_grandis_carrington_pearson.html" class="species-link">Isotachis grandis Carrington &amp; Pearson</a></li>
+<li><a href="species/isotachis_intortifolia_hookf_taylor_gottsche.html" class="species-link">Isotachis intortifolia (Hook.f. &amp; Taylor) Gottsche</a></li>
+<li><a href="species/isotachis_montana_colenso.html" class="species-link">Isotachis montana Colenso</a></li>
+<li><a href="species/isotachis_riparia_rodway.html" class="species-link">Isotachis riparia Rodway</a></li>
+</ul>
+</details>
+</details>
+<details><summary><span class="label">Blepharidophyllaceae R.M.Schust. ex J.J.Engel</span> <span class="count-badge">2</span></summary>
+<details><summary><span class="label">Blepharidophyllum Angstr.</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/blepharidophyllum_vertebrale_gottsche_angstr_ex_cmassal.html" class="species-link">Blepharidophyllum vertebrale (Gottsche) Angstr. ex C.Massal.</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Clandarium (Grolle) R.M.Schust.</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/clandarium_xiphophyllum_grolle_rmschust.html" class="species-link">Clandarium xiphophyllum (Grolle) R.M.Schust.</a></li>
+</ul>
+</details>
+</details>
+<details><summary><span class="label">Calypogeiaceae Arnell</span> <span class="count-badge">1</span></summary>
+<details><summary><span class="label">Calypogeia Raddi, nom. cons.</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/calypogeia_sphagnicola_arnell_jperss_warnst_loeske.html" class="species-link">Calypogeia sphagnicola (Arnell &amp; J.Perss.) Warnst. &amp; Loeske</a></li>
+</ul>
+</details>
+</details>
+<details><summary><span class="label">Geocalycaceae H.Klinggr.</span> <span class="count-badge">1</span></summary>
+<details><summary><span class="label">Geocalyx Nee</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/geocalyx_caledonicus_steph.html" class="species-link">Geocalyx caledonicus Steph.</a></li>
+</ul>
+</details>
+</details>
+<details><summary><span class="label">Gymnomitriaceae H.Klinggr.</span> <span class="count-badge">5</span></summary>
+<details><summary><span class="label">Gymnomitrion Corda</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/gymnomitrion_incompletum_gottsche_rmschust.html" class="species-link">Gymnomitrion incompletum (Gottsche) R.M.Schust.</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Marsupella Dumort.</span> <span class="count-badge">2</span></summary>
+<ul class="species-list">
+<li><a href="species/marsupella_sparsifolia_lindb_dumort.html" class="species-link">Marsupella sparsifolia (Lindb.) Dumort.</a></li>
+<li><a href="species/marsupella_sparsifolia_subsp_childii_rmschust_ex_van_a_l_sderstr.html" class="species-link">Marsupella sparsifolia subsp. childii R.M.Schust. ex Va?n? a &amp; L. Söderstr.</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Metalejeunea Grolle</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/metalejeunea_cucullata_reinw_blume_nees_grolle.html" class="species-link">Metalejeunea cucullata (Reinw., Blume &amp; Nees) Grolle</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Nothogymnomitrion R.M.Schust.</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/nothogymnomitrion_erosum_carrington_pearson_rmschust.html" class="species-link">Nothogymnomitrion erosum (Carrington &amp; Pearson) R.M.Schust.</a></li>
+</ul>
+</details>
+</details>
+<details><summary><span class="label">Jackiellaceae R.M.Schust.</span> <span class="count-badge">1</span></summary>
+<details><summary><span class="label">Jackiella Schiffn.</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/jackiella_curvata_eahodgs_allison.html" class="species-link">Jackiella curvata E.A.Hodgs. &amp; Allison</a></li>
+</ul>
+</details>
+</details>
+<details><summary><span class="label">Jungermanniaceae Rchb.</span> <span class="count-badge">1</span></summary>
+<details><summary><span class="label">Cuspidatula Steph.</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/cuspidatula_monodon_taylor_ex_lehm_steph.html" class="species-link">Cuspidatula monodon (Taylor ex Lehm.) Steph.</a></li>
+</ul>
+</details>
+</details>
+<details><summary><span class="label">Solenostomataceae Stotler &amp; Crand.-Stotl.</span> <span class="count-badge">2</span></summary>
+<details><summary><span class="label">Solenostoma Mitt., nom. cons.</span> <span class="count-badge">2</span></summary>
+<ul class="species-list">
+<li><a href="species/solenostoma_inundatum_hookf_taylor_mitt_ex_steph.html" class="species-link">Solenostoma inundatum (Hook.f. &amp; Taylor) Mitt. ex Steph.</a></li>
+<li><a href="species/solenostoma_orbiculatum_colenso_rmschust.html" class="species-link">Solenostoma orbiculatum (Colenso) R.M.Schust.</a></li>
+</ul>
+</details>
+</details>
+<details><summary><span class="label">Trichotemnomataceae R.M.Schust.</span> <span class="count-badge">1</span></summary>
+<details><summary><span class="label">Trichotemnoma R.M.Schust.</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/trichotemnoma_corrugatum_steph_rmschust.html" class="species-link">Trichotemnoma corrugatum (Steph.) R.M.Schust.</a></li>
+</ul>
+</details>
+</details>
+</details>
+<details><summary><span class="label">Lophocoleineae Schljakov</span> <span class="count-badge">177</span></summary>
+<details><summary><span class="label">Brevianthaceae J.J.Engel &amp; R.M.Schust.</span> <span class="count-badge">2</span></summary>
+<details><summary><span class="label">Brevianthus J.J.Engel &amp; R.M.Schust.</span> <span class="count-badge">2</span></summary>
+<ul class="species-list">
+<li><a href="species/brevianthus_flavus_grolle_jjengel_rmschust.html" class="species-link">Brevianthus flavus (Grolle) J.J.Engel &amp; R.M.Schust.</a></li>
+<li><a href="species/brevianthus_flavus_subsp_flavus.html" class="species-link">Brevianthus flavus subsp. flavus</a></li>
+</ul>
+</details>
+</details>
+<details><summary><span class="label">Herbertaceae Mull.Frib. ex Fulford &amp; Hatcher</span> <span class="count-badge">2</span></summary>
+<details><summary><span class="label">Herbertus Gray</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/herbertus_oldfieldianus_steph_rodway.html" class="species-link">Herbertus oldfieldianus (Steph.) Rodway</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Triandrophyllum Fulford &amp; Hatcher</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/triandrophyllum_subtrifidum_hookf_taylor_fulford_hatcher.html" class="species-link">Triandrophyllum subtrifidum (Hook.f. &amp; Taylor) Fulford &amp; Hatcher</a></li>
+</ul>
+</details>
+</details>
+<details><summary><span class="label">Lepicoleaceae R.M.Schust.</span> <span class="count-badge">2</span></summary>
+<details><summary><span class="label">Lepicolea Dumort.</span> <span class="count-badge">2</span></summary>
+<ul class="species-list">
+<li><a href="species/lepicolea_attenuata_mitt_steph.html" class="species-link">Lepicolea attenuata (Mitt.) Steph</a></li>
+<li><a href="species/lepicolea_scolopendra_hook_dumort_ex_trevis.html" class="species-link">Lepicolea scolopendra (Hook.) Dumort. ex Trevis.</a></li>
+</ul>
+</details>
+</details>
+<details><summary><span class="label">Lepidoziaceae Limpr.</span> <span class="count-badge">73</span></summary>
+<details><summary><span class="label">Acromastigum A.Evans</span> <span class="count-badge">8</span></summary>
+<ul class="species-list">
+<li><a href="species/acromastigum_cavifolium_rmschust.html" class="species-link">Acromastigum cavifolium R.M.Schust.</a></li>
+<li><a href="species/acromastigum_colensoanum_mitt_aevans_ex_reimers.html" class="species-link">Acromastigum colensoanum (Mitt.) A.Evans ex Reimers</a></li>
+<li><a href="species/acromastigum_divaricatum_nees_aevans_ex_reimers.html" class="species-link">Acromastigum divaricatum (Nees) A.Evans ex Reimers</a></li>
+<li><a href="species/acromastigum_fumosum_eabr_mamrenner.html" class="species-link">Acromastigum fumosum E.A.Br. &amp; M.A.M.Renner</a></li>
+<li><a href="species/acromastigum_interstisiale_eabr_mamrenner.html" class="species-link">Acromastigum interstisiale E.A.Br. &amp; M.A.M.Renner</a></li>
+<li><a href="species/acromastigum_mooreanum_steph_eahodgs.html" class="species-link">Acromastigum mooreanum (Steph.) E.A.Hodgs.</a></li>
+<li><a href="species/acromastigum_prismaticale_eabr_mamrenner.html" class="species-link">Acromastigum prismaticale E.A.Br. &amp; M.A.M.Renner</a></li>
+<li><a href="species/acromastigum_verticale_steph_eahodgs.html" class="species-link">Acromastigum verticale (Steph.) E.A.Hodgs.</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Bazzania Gray, nom. cons.</span> <span class="count-badge">9</span></summary>
+<ul class="species-list">
+<li><a href="species/bazzania_accreta_lehm_lindenb_trevis.html" class="species-link">Bazzania accreta (Lehm. &amp; Lindenb.) Trevis.</a></li>
+<li><a href="species/bazzania_adnexa_lehm_lindenb_trevis.html" class="species-link">Bazzania adnexa (Lehm. &amp; Lindenb.) Trevis.</a></li>
+<li><a href="species/bazzania_adnexa_var_adnexa.html" class="species-link">Bazzania adnexa var. adnexa</a></li>
+<li><a href="species/bazzania_avia_meagher.html" class="species-link">Bazzania avia Meagher</a></li>
+<li><a href="species/bazzania_hochstetteri_reichardt_eahodgs.html" class="species-link">Bazzania hochstetteri (Reichardt) E.A.Hodgs.</a></li>
+<li><a href="species/bazzania_involuta_mont_trevis.html" class="species-link">Bazzania involuta (Mont.) Trevis.</a></li>
+<li><a href="species/bazzania_involuta_var_involuta.html" class="species-link">Bazzania involuta var. involuta</a></li>
+<li><a href="species/bazzania_monilinervis_lehm_lindenb_trevis.html" class="species-link">Bazzania monilinervis (Lehm. &amp; Lindenb.) Trevis.</a></li>
+<li><a href="species/bazzania_novaezelandiae_mitt_besch_cmassal.html" class="species-link">Bazzania novae-zelandiae (Mitt.) Besch. &amp; C.Massal.</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Ceramanus E.D.Cooper</span> <span class="count-badge">2</span></summary>
+<ul class="species-list">
+<li><a href="species/ceramanus_centipes_taylor_ex_gotsche_lindenb_nees_edcooper.html" class="species-link">Ceramanus centipes (Taylor ex Gotsche, Lindenb. &amp; Nees) E.D.Cooper</a></li>
+<li><a href="species/ceramanus_grossiseta_steph_edcooper.html" class="species-link">Ceramanus grossiseta (Steph.) E.D.Cooper</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Drucella E.A.Hodgs.</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/drucella_integristipula_steph_eahodgs.html" class="species-link">Drucella integristipula (Steph.) E.A.Hodgs.</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Hygrolembidium R.M.Schust.</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/hygrolembidium_acrocladum_berggr_rmschust.html" class="species-link">Hygrolembidium acrocladum (Berggr.) R.M.Schust.</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Isolembidium R.M.Schust.</span> <span class="count-badge">3</span></summary>
+<ul class="species-list">
+<li><a href="species/isolembidium_anomalum_rodway_grolle.html" class="species-link">Isolembidium anomalum (Rodway) Grolle</a></li>
+<li><a href="species/isolembidium_anomalum_var_anomalum.html" class="species-link">Isolembidium anomalum var. anomalum</a></li>
+<li><a href="species/isolembidium_anomalum_var_cucullatum_eahodgs_jjengel_rmschust.html" class="species-link">Isolembidium anomalum var. cucullatum (E.A.Hodgs.) J.J.Engel &amp; R.M.Schust.</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Kurzia G.Martens</span> <span class="count-badge">11</span></summary>
+<ul class="species-list">
+<li><a href="species/kurzia_calcarata_steph_grolle.html" class="species-link">Kurzia calcarata (Steph.) Grolle</a></li>
+<li><a href="species/kurzia_dendroides_carrington_pearson_grolle.html" class="species-link">Kurzia dendroides (Carrington &amp; Pearson) Grolle</a></li>
+<li><a href="species/kurzia_hippurioides_hookf_taylor_grolle.html" class="species-link">Kurzia hippurioides (Hook.f. &amp; Taylor) Grolle</a></li>
+<li><a href="species/kurzia_pallescens_grolle.html" class="species-link">Kurzia pallescens Grolle</a></li>
+<li><a href="species/kurzia_reversa_carrington_pearson_grolle.html" class="species-link">Kurzia reversa (Carrington &amp; Pearson) Grolle</a></li>
+<li><a href="species/kurzia_saddlensis_besch_cmassal_grolle.html" class="species-link">Kurzia saddlensis (Besch. &amp; C.Massal.) Grolle</a></li>
+<li><a href="species/kurzia_setiformis_de_not_jjengel_rmschust.html" class="species-link">Kurzia setiformis (De Not.) J.J.Engel &amp; R.M.Schust.</a></li>
+<li><a href="species/kurzia_sexfida_steph_grolle.html" class="species-link">Kurzia sexfida (Steph.) Grolle</a></li>
+<li><a href="species/kurzia_tasmanica_steph_edcooper.html" class="species-link">Kurzia tasmanica (Steph.) E.D.Cooper</a></li>
+<li><a href="species/kurzia_tenax_grev_grolle.html" class="species-link">Kurzia tenax (Grev.) Grolle</a></li>
+<li><a href="species/kurzia_verticellata_carrington_grolle.html" class="species-link">Kurzia verticellata (Carrington) Grolle</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Lepidozia (Dumort.) Dumort., nom. cons.</span> <span class="count-badge">16</span></summary>
+<ul class="species-list">
+<li><a href="species/lepidozia_appressifolia_steph.html" class="species-link">Lepidozia appressifolia Steph.</a></li>
+<li><a href="species/lepidozia_chordulifera_taylor.html" class="species-link">Lepidozia chordulifera Taylor</a></li>
+<li><a href="species/lepidozia_concinna_colenso.html" class="species-link">Lepidozia concinna Colenso</a></li>
+<li><a href="species/lepidozia_digitata_herzog.html" class="species-link">Lepidozia digitata Herzog</a></li>
+<li><a href="species/lepidozia_glaucophylla_hookf_taylor_taylor_ex_gottsche_lindenb_nees.html" class="species-link">Lepidozia glaucophylla (Hook.f. &amp; Taylor) Taylor ex Gottsche, Lindenb. &amp; Nees</a></li>
+<li><a href="species/lepidozia_laevifolia_hookf_taylor_taylor_ex_gottsche_lindenb_nees.html" class="species-link">Lepidozia laevifolia (Hook.f. &amp; Taylor) Taylor ex Gottsche, Lindenb. &amp; Nees</a></li>
+<li><a href="species/lepidozia_laevifolia_var_laevifolia.html" class="species-link">Lepidozia laevifolia var. laevifolia</a></li>
+<li><a href="species/lepidozia_nova_steph.html" class="species-link">Lepidozia nova Steph.</a></li>
+<li><a href="species/lepidozia_obtusiloba_steph.html" class="species-link">Lepidozia obtusiloba Steph.</a></li>
+<li><a href="species/lepidozia_obtusiloba_var_obtusiloba.html" class="species-link">Lepidozia obtusiloba var. obtusiloba</a></li>
+<li><a href="species/lepidozia_pendulina_hook_lindenb.html" class="species-link">Lepidozia pendulina (Hook.) Lindenb.</a></li>
+<li><a href="species/lepidozia_procera_mitt.html" class="species-link">Lepidozia procera Mitt.</a></li>
+<li><a href="species/lepidozia_quadrifida_kunze_ex_lindenb.html" class="species-link">Lepidozia quadrifida Kunze ex Lindenb.</a></li>
+<li><a href="species/lepidozia_septemfida_steph.html" class="species-link">Lepidozia septemfida Steph.</a></li>
+<li><a href="species/lepidozia_ulothrix_schwgr_lindenb.html" class="species-link">Lepidozia ulothrix (Schwägr.) Lindenb.</a></li>
+<li><a href="species/lepidozia_weymouthiana_steph.html" class="species-link">Lepidozia weymouthiana Steph.</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Neogrollea E.A.Hodgs.</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/neogrollea_notabilis_eahodgs.html" class="species-link">Neogrollea notabilis E.A.Hodgs.</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Neolepidozia Fulford &amp; J.Taylor</span> <span class="count-badge">7</span></summary>
+<ul class="species-list">
+<li><a href="species/neolepidozia_capilligera_schwgr_fulford_jtaylor.html" class="species-link">Neolepidozia capilligera (Schwägr.) Fulford &amp; J.Taylor</a></li>
+<li><a href="species/neolepidozia_consobrina_jjengel_glmerr_edcooper.html" class="species-link">Neolepidozia consobrina (J.J.Engel &amp; G.L.Merr.) E.D.Cooper</a></li>
+<li><a href="species/neolepidozia_palmata_jjengel_glmerr_edcooper.html" class="species-link">Neolepidozia palmata (J.J.Engel &amp; G.L.Merr.) E.D.Cooper</a></li>
+<li><a href="species/neolepidozia_patentissima_hookf_taylor_edcooper.html" class="species-link">Neolepidozia patentissima (Hook.f. &amp; Taylor) E.D.Cooper</a></li>
+<li><a href="species/neolepidozia_patentissima_var_ampliata_jjengel_glmerr_edcooper.html" class="species-link">Neolepidozia patentissima var. ampliata (J.J.Engel &amp; G.L.Merr.) E.D.Cooper</a></li>
+<li><a href="species/neolepidozia_patentissima_var_patentissima.html" class="species-link">Neolepidozia patentissima var. patentissima</a></li>
+<li><a href="species/neolepidozia_tridactylis_lehm_lindenb_edcooper.html" class="species-link">Neolepidozia tridactylis (Lehm. &amp; Lindenb.) E.D.Cooper</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Paracromastigum Fulford &amp; J.Taylor</span> <span class="count-badge">2</span></summary>
+<ul class="species-list">
+<li><a href="species/paracromastigum_longiscyphum_taylor_rmschust_jjengel.html" class="species-link">Paracromastigum longiscyphum (Taylor) R.M.Schust. &amp; J.J.Engel</a></li>
+<li><a href="species/paracromastigum_vastilobum_steph_jjengel_glmerr.html" class="species-link">Paracromastigum vastilobum (Steph.) J.J.Engel &amp; G.L.Merr.</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Pseudocephalozia R.M.Schust.</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/pseudocephalozia_paludicola_rmschust.html" class="species-link">Pseudocephalozia paludicola R.M.Schust</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Psiloclada Mitt.</span> <span class="count-badge">2</span></summary>
+<ul class="species-list">
+<li><a href="species/psiloclada_clandestina_mitt.html" class="species-link">Psiloclada clandestina Mitt.</a></li>
+<li><a href="species/psiloclada_clandestina_subsp_clandestina.html" class="species-link">Psiloclada clandestina subsp. clandestina</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Telaranea Spruce ex Schiffn.</span> <span class="count-badge">3</span></summary>
+<ul class="species-list">
+<li><a href="species/telaranea_fragilifolia_rmschust_jjengel_glmerr.html" class="species-link">Telaranea fragilifolia (R.M.Schust.) J.J.Engel &amp; G.L.Merr.</a></li>
+<li><a href="species/telaranea_herzogii_eahodgs_eahodgs.html" class="species-link">Telaranea herzogii (E.A.Hodgs.) E.A.Hodgs.</a></li>
+<li><a href="species/telaranea_inaequalis_rmschust_ex_jjengel_glmerr.html" class="species-link">Telaranea inaequalis R.M.Schust. ex J.J.Engel &amp; G.L.Merr.</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Tricholepidozia (R.M.Schust.) E.D.Cooper</span> <span class="count-badge">2</span></summary>
+<ul class="species-list">
+<li><a href="species/tricholepidozia_pulcherrima_steph_edcooper.html" class="species-link">Tricholepidozia pulcherrima (Steph.) E.D.Cooper</a></li>
+<li><a href="species/tricholepidozia_pulcherrima_varmooreana_steph_edcooper.html" class="species-link">Tricholepidozia pulcherrima var.mooreana (Steph.) E.D.Cooper</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Zoopsis (Hook.f. &amp; Taylor) Hook.f. ex Gottsche, Lindenb. &amp; Nees</span> <span class="count-badge">4</span></summary>
+<ul class="species-list">
+<li><a href="species/zoopsis_argentea_hookf_taylor_hookf_ex_gottsche_lindenb_nees.html" class="species-link">Zoopsis argentea (Hook.f. &amp; Taylor) Hook.f. ex Gottsche, Lindenb. &amp; Nees</a></li>
+<li><a href="species/zoopsis_argentea_var_argentea.html" class="species-link">Zoopsis argentea var. argentea</a></li>
+<li><a href="species/zoopsis_leitgebiana_carrington_pearson_bastow.html" class="species-link">Zoopsis leitgebiana (Carrington &amp; Pearson) Bastow</a></li>
+<li><a href="species/zoopsis_setulosa_leitg.html" class="species-link">Zoopsis setulosa Leitg.</a></li>
+</ul>
+</details>
+</details>
+<details><summary><span class="label">Lophocoleaceae Vanden Berghen</span> <span class="count-badge">76</span></summary>
+<details><summary><span class="label">Chiloscyphus Corda, nom. cons</span> <span class="count-badge">20</span></summary>
+<ul class="species-list">
+<li><a href="species/chiloscyphus_austrigenus_hookf_taylor_jjengel_rmschust.html" class="species-link">Chiloscyphus austrigenus (Hook.f. &amp; Taylor) J.J.Engel &amp; R.M.Schust.</a></li>
+<li><a href="species/chiloscyphus_austrigenus_subsp_okaritanus_steph_jjengel.html" class="species-link">Chiloscyphus austrigenus subsp. okaritanus (Steph.) J.J.Engel</a></li>
+<li><a href="species/chiloscyphus_bispinosus_hookf_taylor_jjengel_rmschust.html" class="species-link">Chiloscyphus bispinosus (Hook.f. &amp; Taylor) J.J.Engel &amp; R.M.Schust.</a></li>
+<li><a href="species/chiloscyphus_canaliculatus_gottsche_lindenb_nees.html" class="species-link">Chiloscyphus canaliculatus Gottsche, Lindenb. &amp; Nees</a></li>
+<li><a href="species/chiloscyphus_canaliculatus_var_canaliculatus.html" class="species-link">Chiloscyphus canaliculatus var. canaliculatus</a></li>
+<li><a href="species/chiloscyphus_cuspidatus_nees_jjengel_rmschust.html" class="species-link">Chiloscyphus cuspidatus (Nees) J.J.Engel &amp; R.M.Schust.</a></li>
+<li><a href="species/chiloscyphus_gippslandicus_jjengel_rmschust.html" class="species-link">Chiloscyphus gippslandicus J.J.Engel &amp; R.M.Schust.</a></li>
+<li><a href="species/chiloscyphus_longiciliatus_steph_jjengel_rmschust.html" class="species-link">Chiloscyphus longiciliatus (Steph.) J.J.Engel &amp; R.M.Schust.</a></li>
+<li><a href="species/chiloscyphus_muricatus_lehm_jjengel_rmschust.html" class="species-link">Chiloscyphus muricatus (Lehm.) J.J.Engel &amp; R.M.Schust.</a></li>
+<li><a href="species/chiloscyphus_novaezeelandiae_lehm_lindenb_jjengel_rmschust.html" class="species-link">Chiloscyphus novae-zeelandiae (Lehm. &amp; Lindenb.) J.J.Engel &amp; R.M.Schust.</a></li>
+<li><a href="species/chiloscyphus_novaezeelandiae_var_grandistipulus_schiffn_jjengel.html" class="species-link">Chiloscyphus novae-zeelandiae var. grandistipulus (Schiffn.) J.J.Engel</a></li>
+<li><a href="species/chiloscyphus_novaezeelandiae_var_meridionalis_steph_jjengel.html" class="species-link">Chiloscyphus novae-zeelandiae var. meridionalis (Steph.) J.J.Engel</a></li>
+<li><a href="species/chiloscyphus_novaezeelandiae_var_novaezeelandiae.html" class="species-link">Chiloscyphus novae-zeelandiae var. novae-zeelandiae</a></li>
+<li><a href="species/chiloscyphus_perpusillus_hookf_taylor_jjengel.html" class="species-link">Chiloscyphus perpusillus (Hook.f. &amp; Taylor) J.J.Engel</a></li>
+<li><a href="species/chiloscyphus_rarus_steph_jjengel_rmschust.html" class="species-link">Chiloscyphus rarus (Steph.) J.J.Engel &amp; R.M.Schust.</a></li>
+<li><a href="species/chiloscyphus_rupicola_steph_jjengel_rmschust.html" class="species-link">Chiloscyphus rupicola (Steph.) J.J.Engel &amp; R.M.Schust.</a></li>
+<li><a href="species/chiloscyphus_semiteres_var_semiteres.html" class="species-link">Chiloscyphus semiteres var. semiteres</a></li>
+<li><a href="species/chiloscyphus_subemarginatus_hookf_taylor_jjengel_rmschust.html" class="species-link">Chiloscyphus subemarginatus (Hook.f. &amp; Taylor) J.J.Engel &amp; R.M.Schust.</a></li>
+<li><a href="species/chiloscyphus_subporosus_mitt_jjengel_rmschust.html" class="species-link">Chiloscyphus subporosus (Mitt.) J.J.Engel &amp; R.M.Schust.</a></li>
+<li><a href="species/chiloscyphus_subporosus_var_subporosus.html" class="species-link">Chiloscyphus subporosus var. subporosus</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Clasmatocolea Spruce</span> <span class="count-badge">7</span></summary>
+<ul class="species-list">
+<li><a href="species/clasmatocolea_inflexispina_hookf_taylor_jjengel.html" class="species-link">Clasmatocolea inflexispina (Hook.f. &amp; Taylor) J.J.Engel</a></li>
+<li><a href="species/clasmatocolea_marginata_steph_grolle.html" class="species-link">Clasmatocolea marginata (Steph.) Grolle</a></li>
+<li><a href="species/clasmatocolea_notophylla_hookf_taylor_grolle.html" class="species-link">Clasmatocolea notophylla (Hook.f. &amp; Taylor) Grolle</a></li>
+<li><a href="species/clasmatocolea_rigens_hookf_taylor_jjengel.html" class="species-link">Clasmatocolea rigens (Hook.f. &amp; Taylor) J.J.Engel</a></li>
+<li><a href="species/clasmatocolea_strongylophylla_hookf_taylor_grolle.html" class="species-link">Clasmatocolea strongylophylla (Hook.f. &amp; Taylor) Grolle</a></li>
+<li><a href="species/clasmatocolea_vermicularis_lehm_grolle.html" class="species-link">Clasmatocolea vermicularis (Lehm.) Grolle</a></li>
+<li><a href="species/clasmatocolea_verrucosa_jjengel.html" class="species-link">Clasmatocolea verrucosa J.J.Engel</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Cryptolophocolea L.Söderstr., Crand.-Stotl. &amp; Vá?a</span> <span class="count-badge">6</span></summary>
+<ul class="species-list">
+<li><a href="species/cryptolophocolea_connatifolia_jjengel_lsderstr.html" class="species-link">Cryptolophocolea connatifolia (J.J.Engel) L.Söderstr.</a></li>
+<li><a href="species/cryptolophocolea_edentata_jjengel_lsderstr.html" class="species-link">Cryptolophocolea edentata (J.J.Engel) L.Söderstr.</a></li>
+<li><a href="species/cryptolophocolea_helmsiana_steph_lsderstr.html" class="species-link">Cryptolophocolea helmsiana (Steph.) L.Söderstr.</a></li>
+<li><a href="species/cryptolophocolea_leucophylla_hookf_taylor_lsderstr.html" class="species-link">Cryptolophocolea leucophylla (Hook.f. &amp; Taylor) L.Söderstr.</a></li>
+<li><a href="species/cryptolophocolea_subopposita_jjengel_lsderstr.html" class="species-link">Cryptolophocolea subopposita (J.J.Engel) L.Söderstr.</a></li>
+<li><a href="species/cryptolophocolea_trialata_gottsche_lsderstr.html" class="species-link">Cryptolophocolea trialata (Gottsche) L.Söderstr.</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Hepatostolonophora J.J.Engel &amp; R.M.Schust.</span> <span class="count-badge">2</span></summary>
+<ul class="species-list">
+<li><a href="species/hepatostolonophora_paucistipula_rodway_jjengel.html" class="species-link">Hepatostolonophora paucistipula (Rodway) J.J.Engel</a></li>
+<li><a href="species/hepatostolonophora_rotata_hookf_taylor_jjengel.html" class="species-link">Hepatostolonophora rotata (Hook.f. &amp; Taylor) J.J.Engel</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Heteroscyphus Schiffn.</span> <span class="count-badge">29</span></summary>
+<ul class="species-list">
+<li><a href="species/heteroscyphus_allodontus_hookf_taylor_jjengel_rmschust.html" class="species-link">Heteroscyphus allodontus (Hook.f. &amp; Taylor) J.J.Engel &amp; R.M.Schust.</a></li>
+<li><a href="species/heteroscyphus_ammophilus_colenso_rmschust.html" class="species-link">Heteroscyphus ammophilus (Colenso) R.M.Schust.</a></li>
+<li><a href="species/heteroscyphus_ammophilus_var_ammophilus.html" class="species-link">Heteroscyphus ammophilus var. ammophilus</a></li>
+<li><a href="species/heteroscyphus_billarderii_schwgr_schiffn.html" class="species-link">Heteroscyphus billarderii (Schwägr.) Schiffn.</a></li>
+<li><a href="species/heteroscyphus_billarderii_var_billarderii.html" class="species-link">Heteroscyphus billarderii var. billarderii</a></li>
+<li><a href="species/heteroscyphus_billarderii_var_clasmatocoleoides_jjengel_glmerr_jjengel.html" class="species-link">Heteroscyphus billarderii var. clasmatocoleoides (J.J.Engel &amp; G.L.Merr.) J.J.Engel</a></li>
+<li><a href="species/heteroscyphus_coalitus_hook_schiffn.html" class="species-link">Heteroscyphus coalitus (Hook.) Schiffn.</a></li>
+<li><a href="species/heteroscyphus_coalitus_var_coalitus.html" class="species-link">Heteroscyphus coalitus var. coalitus</a></li>
+<li><a href="species/heteroscyphus_coalitus_var_simplicifolius_jjengel.html" class="species-link">Heteroscyphus coalitus var. simplicifolius J.J.Engel</a></li>
+<li><a href="species/heteroscyphus_conjugatus_mitt_jjengel_rmschust.html" class="species-link">Heteroscyphus conjugatus (Mitt.) J.J.Engel &amp; R.M.Schust.</a></li>
+<li><a href="species/heteroscyphus_echinellus_lindenb_gottsche_jjengel_xiao_lhe.html" class="species-link">Heteroscyphus echinellus (Lindenb. &amp; Gottsche) J.J.Engel &amp; Xiao L.He</a></li>
+<li><a href="species/heteroscyphus_fissistipus_hookf_taylor_schiffn.html" class="species-link">Heteroscyphus fissistipus (Hook.f. &amp; Taylor) Schiffn.</a></li>
+<li><a href="species/heteroscyphus_fissistipus_var_fissistipus.html" class="species-link">Heteroscyphus fissistipus var. fissistipus</a></li>
+<li><a href="species/heteroscyphus_gunnianus_mitt_jjengel_rmschust.html" class="species-link">Heteroscyphus gunnianus (Mitt.) J.J.Engel &amp; R.M.Schust.</a></li>
+<li><a href="species/heteroscyphus_knightii_steph_grolle.html" class="species-link">Heteroscyphus knightii (Steph.) Grolle</a></li>
+<li><a href="species/heteroscyphus_levieri_steph_schiffn.html" class="species-link">Heteroscyphus levieri (Steph.) Schiffn</a></li>
+<li><a href="species/heteroscyphus_limosus_carrington_pearson_schiffn.html" class="species-link">Heteroscyphus limosus (Carrington &amp; Pearson) Schiffn</a></li>
+<li><a href="species/heteroscyphus_menziesii_mitt_jjengel.html" class="species-link">Heteroscyphus menziesii (Mitt.) J.J.Engel</a></li>
+<li><a href="species/heteroscyphus_mononuculus_jjengel.html" class="species-link">Heteroscyphus mononuculus J.J.Engel</a></li>
+<li><a href="species/heteroscyphus_mononuculus_var_ammophilopsis_jjengel.html" class="species-link">Heteroscyphus mononuculus var. ammophilopsis J.J.Engel</a></li>
+<li><a href="species/heteroscyphus_mononuculus_var_mononuculus.html" class="species-link">Heteroscyphus mononuculus var. mononuculus</a></li>
+<li><a href="species/heteroscyphus_multifidus_steph_jjengel_rmschust.html" class="species-link">Heteroscyphus multifidus (Steph.) J.J.Engel &amp; R.M.Schust</a></li>
+<li><a href="species/heteroscyphus_multifidus_var_subintegerrimus_jjengel.html" class="species-link">Heteroscyphus multifidus var. subintegerrimus J.J.Engel</a></li>
+<li><a href="species/heteroscyphus_sinuosus_hook_schiffn.html" class="species-link">Heteroscyphus sinuosus (Hook.) Schiffn</a></li>
+<li><a href="species/heteroscyphus_supinus_hookf_taylor_rmschust.html" class="species-link">Heteroscyphus supinus (Hook.f. &amp; Taylor) R.M.Schust</a></li>
+<li><a href="species/heteroscyphus_tasmanicus_steph_jjengel_rmschust.html" class="species-link">Heteroscyphus tasmanicus (Steph.) J.J.Engel &amp; R.M.Schust</a></li>
+<li><a href="species/heteroscyphus_triacanthus_hookf_taylor_schiffn.html" class="species-link">Heteroscyphus triacanthus (Hook.f. &amp; Taylor) Schiffn.</a></li>
+<li><a href="species/heteroscyphus_triacanthus_var_magnistipulatus_jjengel.html" class="species-link">Heteroscyphus triacanthus var. magnistipulatus J.J.Engel</a></li>
+<li><a href="species/heteroscyphus_triacanthus_var_triacanthus.html" class="species-link">Heteroscyphus triacanthus var. triacanthus</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Leptophyllopsis R.M.Schust.</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/leptophyllopsis_laxa_mitt_rmschust.html" class="species-link">Leptophyllopsis laxa (Mitt.) R.M.Schust.</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Leptoscyphus Mitt.</span> <span class="count-badge">8</span></summary>
+<ul class="species-list">
+<li><a href="species/leptoscyphus_australis_gottsche_lindenb_nees_rmschust.html" class="species-link">Leptoscyphus australis (Gottsche, Lindenb. &amp; Nees) R.M.Schust.</a></li>
+<li><a href="species/leptoscyphus_compactus_colenso_jjengel.html" class="species-link">Leptoscyphus compactus (Colenso) J.J.Engel</a></li>
+<li><a href="species/leptoscyphus_excipulatus_steph_jjengel.html" class="species-link">Leptoscyphus excipulatus (Steph.) J.J.Engel</a></li>
+<li><a href="species/leptoscyphus_excipulatus_var_canaliculatus_jjengel.html" class="species-link">Leptoscyphus excipulatus var. canaliculatus J.J.Engel</a></li>
+<li><a href="species/leptoscyphus_excipulatus_var_excipulatus.html" class="species-link">Leptoscyphus excipulatus var. excipulatus</a></li>
+<li><a href="species/leptoscyphus_heterophyllus_steph_jjengel.html" class="species-link">Leptoscyphus heterophyllus (Steph.) J.J.Engel</a></li>
+<li><a href="species/leptoscyphus_idiodontus_jjengel.html" class="species-link">Leptoscyphus idiodontus J.J.Engel</a></li>
+<li><a href="species/leptoscyphus_incomptus_jjengel.html" class="species-link">Leptoscyphus incomptus J.J.Engel</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Stolonivector J.J.Engel</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/stolonivector_obtusilobus_jjengel.html" class="species-link">Stolonivector obtusilobus J.J.Engel</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Tetracymbaliella Grolle</span> <span class="count-badge">2</span></summary>
+<ul class="species-list">
+<li><a href="species/tetracymbaliella_decipiens_gottsche_grolle.html" class="species-link">Tetracymbaliella decipiens (Gottsche) Grolle</a></li>
+<li><a href="species/tetracymbaliella_subsimplex_austin_jjengel.html" class="species-link">Tetracymbaliella subsimplex (Austin) J.J.Engel</a></li>
+</ul>
+</details>
+</details>
+<details><summary><span class="label">Plagiochilaceae Mull.Frib. &amp; Herzog</span> <span class="count-badge">16</span></summary>
+<details><summary><span class="label">Chiastocaulon Carl</span> <span class="count-badge">3</span></summary>
+<ul class="species-list">
+<li><a href="species/chiastocaulon_biseriale_lehm_lindenb_sdfpatzak_mamrenner_schfverw_heinrichs.html" class="species-link">Chiastocaulon biseriale (Lehm. &amp; Lindenb.) S.D.F.Patzak M.A.M.Renner, Schäf.-Verw. &amp; Heinrichs</a></li>
+<li><a href="species/chiastocaulon_flamabile_mamrenner.html" class="species-link">Chiastocaulon flamabile M.A.M.Renner</a></li>
+<li><a href="species/chiastocaulon_proliferum_mitt_sdfpatzak_mamrenner_schfverw_heinrichs.html" class="species-link">Chiastocaulon proliferum (Mitt.) S.D.F.Patzak, M.A.M.Renner, Schäf.-Verw. &amp; Heinrichs</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Cryptoplagiochila S.D.F.Patzak, M.A.M. Renner &amp; Heinrichs</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/cryptoplagiochila_radiculosa_mitt_sdfpatzak_mamrenner_heinrich.html" class="species-link">Cryptoplagiochila radiculosa (Mitt.) S.D.F.Patzak, M.A.M.Renner &amp; Heinrich</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Dinckleria Trevis.</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/dinckleria_pleurata_hookf_taylor_trevis.html" class="species-link">Dinckleria pleurata (Hook.f. &amp; Taylor) Trevis.</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Plagiochila (Dumort.) Dumort., nom. cons.</span> <span class="count-badge">11</span></summary>
+<ul class="species-list">
+<li><a href="species/plagiochila_baylisii_inoue_rmschust.html" class="species-link">Plagiochila baylisii Inoue &amp; R.M.Schust</a></li>
+<li><a href="species/plagiochila_circinalis_lehm_lindenb_lehm_lindenb_ex_lindenb.html" class="species-link">Plagiochila circinalis (Lehm. &amp; Lindenb.) Lehm. &amp; Lindenb. Ex Lindenb.</a></li>
+<li><a href="species/plagiochila_fasciculata_lindenb.html" class="species-link">Plagiochila fasciculata Lindenb</a></li>
+<li><a href="species/plagiochila_fragmentissima_inoue_rmschust.html" class="species-link">Plagiochila fragmentissima Inoue &amp; R.M.Schust.</a></li>
+<li><a href="species/plagiochila_fuscella_hookf_taylor_taylor_hookf_ex_gottsche_lindenb_nees.html" class="species-link">Plagiochila fuscella (Hook.f. &amp; Taylor) Taylor &amp; Hook.f. ex Gottsche, Lindenb. &amp; Nees</a></li>
+<li><a href="species/plagiochila_hartziana_pearson.html" class="species-link">Plagiochila hartziana Pearson</a></li>
+<li><a href="species/plagiochila_incurvicolla_hookf_taylor_taylor_hookf_ex_gottsche_lindenb_nees.html" class="species-link">Plagiochila incurvicolla (Hook.f. &amp; Taylor) Taylor &amp; Hook.f. ex Gottsche, Lindenb. &amp; Nees</a></li>
+<li><a href="species/plagiochila_ratkowskyana_inoue.html" class="species-link">Plagiochila ratkowskyana Inoue</a></li>
+<li><a href="species/plagiochila_retrospectans_nees.html" class="species-link">Plagiochila retrospectans Nees</a></li>
+<li><a href="species/plagiochila_stephensoniana_mitt.html" class="species-link">Plagiochila stephensoniana Mitt.</a></li>
+<li><a href="species/plagiochila_strombifolia_taylor_ex_lehm_taylor.html" class="species-link">Plagiochila strombifolia (Taylor ex Lehm.) Taylor</a></li>
+</ul>
+</details>
+</details>
+<details><summary><span class="label">Pseudolepicoleaceae Fulford &amp; J.Taylor</span> <span class="count-badge">2</span></summary>
+<details><summary><span class="label">Archeophylla R.M.Schust.</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/archeophylla_schusteri_eahodgs_allison_rmschust.html" class="species-link">Archeophylla schusteri (E.A.Hodgs. &amp; Allison) R.M.Schust.</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Isophyllaria E.A.Hodgs. &amp; Allison</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/isophyllaria_attenuata_rodway_eahodgs.html" class="species-link">Isophyllaria attenuata (Rodway) E.A.Hodgs.</a></li>
+</ul>
+</details>
+</details>
+<details><summary><span class="label">Trichocoleaceae Nakai</span> <span class="count-badge">4</span></summary>
+<details><summary><span class="label">Castanoclobos J.J.Engel &amp; Glenny</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/castanoclobos_julaceus_hatcher_ex_jjengel_jjengel_glenny.html" class="species-link">Castanoclobos julaceus (Hatcher ex J.J.Engel) J.J.Engel &amp; Glenny</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Eotrichocolea R.M.Schust.</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/eotrichocolea_polyacantha_hookf_taylor_rmschust.html" class="species-link">Eotrichocolea polyacantha (Hook.f. &amp; Taylor) R.M.Schust.</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Trichocolea Dumort., nom. cons.</span> <span class="count-badge">2</span></summary>
+<ul class="species-list">
+<li><a href="species/trichocolea_mollissima_hookf_taylor_gottsche.html" class="species-link">Trichocolea mollissima (Hook.f. &amp; Taylor) Gottsche</a></li>
+<li><a href="species/trichocolea_rigida_rmschust.html" class="species-link">Trichocolea rigida R.M.Schust.</a></li>
+</ul>
+</details>
+</details>
+</details>
+<details><summary><span class="label">Perssoniellineae R.M.Schust.</span> <span class="count-badge">10</span></summary>
+<details><summary><span class="label">Schistochilaceae H.Buch</span> <span class="count-badge">10</span></summary>
+<details><summary><span class="label">Gottschea Nees ex Mont.</span> <span class="count-badge">3</span></summary>
+<ul class="species-list">
+<li><a href="species/gottschea_isotachyphylla_jjengel_rmschust_jjengel.html" class="species-link">Gottschea isotachyphylla (J.J.Engel &amp; R.M.Schust.) J.J.Engel</a></li>
+<li><a href="species/gottschea_pinnatifolia_hook_nees.html" class="species-link">Gottschea pinnatifolia (Hook.) Nees</a></li>
+<li><a href="species/gottschea_tuloides_hookf_taylor_gottsche_lindenb_nee.html" class="species-link">Gottschea tuloides (Hook.f. &amp; Taylor) Gottsche, Lindenb. &amp; Nee</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Pachyschistochila R.M.Schust. &amp; J.J.Engel</span> <span class="count-badge">3</span></summary>
+<ul class="species-list">
+<li><a href="species/pachyschistochila_parvistipula_rodway_rmschust_jjengel.html" class="species-link">Pachyschistochila parvistipula (Rodway) R.M.Schust. &amp; J.J.Engel</a></li>
+<li><a href="species/pachyschistochila_succulenta_jjengel_rmschust.html" class="species-link">Pachyschistochila succulenta J.J.Engel &amp; R.M.Schust.</a></li>
+<li><a href="species/pachyschistochila_trispiralis_rmschust_rmschust_jjengel.html" class="species-link">Pachyschistochila trispiralis (R.M.Schust.) R.M.Schust. &amp; J.J.Engel</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Schistochila Dumort.</span> <span class="count-badge">4</span></summary>
+<ul class="species-list">
+<li><a href="species/schistochila_balfouriana_hookf_taylor_steph.html" class="species-link">Schistochila balfouriana (Hook.f. &amp; Taylor) Steph.</a></li>
+<li><a href="species/schistochila_lehmanniana_lehm_lindenb_carrington_pearson.html" class="species-link">Schistochila lehmanniana (Lehm. &amp; Lindenb.) Carrington &amp; Pearson</a></li>
+<li><a href="species/schistochila_pseudociliata_rmschust.html" class="species-link">Schistochila pseudociliata R.M.Schust.</a></li>
+<li><a href="species/schistochila_tasmanica_steph.html" class="species-link">Schistochila tasmanica Steph.</a></li>
+</ul>
+</details>
+</details>
+</details>
+</details>
+<details><summary><span class="label">Porellales Schljakov</span> <span class="count-badge">50</span></summary>
+<details><summary><span class="label">Jubulineae Mull.Frib.</span> <span class="count-badge">34</span></summary>
+<details><summary><span class="label">Frullaniaceae Lorch</span> <span class="count-badge">11</span></summary>
+<details><summary><span class="label">Frullania Raddi</span> <span class="count-badge">11</span></summary>
+<ul class="species-list">
+<li><a href="species/frullania_aterrima_hookf_taylor_hookf_taylor_ex_gottsch_lindenb_nees.html" class="species-link">Frullania aterrima (Hook.f. &amp; Taylor) Hook.f. &amp; Taylor ex Gottsch Lindenb. &amp; Nees</a></li>
+<li><a href="species/frullania_clavata_hookf_taylor_taylor_ex_gottsche_lindenb_nees.html" class="species-link">Frullania clavata (Hook.f. &amp; Taylor) Taylor ex Gottsche, Lindenb. &amp; Nees</a></li>
+<li><a href="species/frullania_deplanata_mitt.html" class="species-link">Frullania deplanata Mitt.</a></li>
+<li><a href="species/frullania_falciloba_taylor_ex_lehm.html" class="species-link">Frullania falciloba Taylor ex Lehm.</a></li>
+<li><a href="species/frullania_hattorii_konrat_braggins.html" class="species-link">Frullania hattorii Konrat &amp; Braggins</a></li>
+<li><a href="species/frullania_incumbens_mitt.html" class="species-link">Frullania incumbens Mitt.</a></li>
+<li><a href="species/frullania_monocera_var_monocera.html" class="species-link">Frullania monocera var. monocera</a></li>
+<li><a href="species/frullania_pentapleura_taylor.html" class="species-link">Frullania pentapleura Taylor</a></li>
+<li><a href="species/frullania_probosciphora_taylor.html" class="species-link">Frullania probosciphora Taylor</a></li>
+<li><a href="species/frullania_rostrata_hookf_taylor_hookf_taylor_ex_gottsch_lindenb_nees.html" class="species-link">Frullania rostrata (Hook.f. &amp; Taylor) Hook.f. &amp; Taylor ex Gottsch, Lindenb. &amp; Nees</a></li>
+<li><a href="species/frullania_setchellii_pearson.html" class="species-link">Frullania setchellii Pearson</a></li>
+</ul>
+</details>
+</details>
+<details><summary><span class="label">Lejeuneaceae Cavers</span> <span class="count-badge">23</span></summary>
+<details><summary><span class="label">Acrolejeunea (Spruce) Steph., nom. cons.</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/acrolejeunea_aulacophora_mont_steph.html" class="species-link">Acrolejeunea aulacophora (Mont.) Steph.</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Cheilolejeunea (Spruce) Steph.</span> <span class="count-badge">5</span></summary>
+<ul class="species-list">
+<li><a href="species/cheilolejeunea_albovirens_hookf_taylor_eahodgs.html" class="species-link">Cheilolejeunea albovirens (Hook.f. &amp; Taylor) E.A.Hodgs.</a></li>
+<li><a href="species/cheilolejeunea_campbelliensis_steph_rmschust.html" class="species-link">Cheilolejeunea campbelliensis (Steph.) R.M.Schust.</a></li>
+<li><a href="species/cheilolejeunea_comitans_hookf_taylor_rmschust.html" class="species-link">Cheilolejeunea comitans (Hook.f. &amp; Taylor) R.M.Schust.</a></li>
+<li><a href="species/cheilolejeunea_mimosa_hookf_taylor_rmschust.html" class="species-link">Cheilolejeunea mimosa (Hook.f. &amp; Taylor) R.M.Schust.</a></li>
+<li><a href="species/cheilolejeunea_norrisii_grolle_mamrenner.html" class="species-link">Cheilolejeunea norrisii (Grolle) M.A.M.Renner</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Cololejeunea (Spruce) Steph.</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/cololejeunea_laevigata_steph_rmschust.html" class="species-link">Cololejeunea laevigata (Steph.) R.M.Schust.</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Colura (Dumort.) Dumort.</span> <span class="count-badge">3</span></summary>
+<ul class="species-list">
+<li><a href="species/colura_pulcherrima_jovetast.html" class="species-link">Colura pulcherrima Jovet-Ast</a></li>
+<li><a href="species/colura_pulcherrima_var_bartlettii_jovetast.html" class="species-link">Colura pulcherrima var. bartlettii Jovet-Ast</a></li>
+<li><a href="species/colura_saccophylla_eahodgs_herzog.html" class="species-link">Colura saccophylla E.A.Hodgs. &amp; Herzog</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Diplasiolejeunea (Spruce) Schiffn.</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/diplasiolejeunea_plicatiloba_hookf_taylor_grolle.html" class="species-link">Diplasiolejeunea plicatiloba (Hook.f. &amp; Taylor) Grolle</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Drepanolejeunea (Spruce) Steph.</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/drepanolejeunea_aucklandica_steph.html" class="species-link">Drepanolejeunea aucklandica Steph.</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Lejeunea Lib., nom. cons.</span> <span class="count-badge">5</span></summary>
+<ul class="species-list">
+<li><a href="species/lejeunea_drummondii_taylor.html" class="species-link">Lejeunea drummondii Taylor</a></li>
+<li><a href="species/lejeunea_flava_schwgr_nees.html" class="species-link">Lejeunea flava (Schwägr.) Nees</a></li>
+<li><a href="species/lejeunea_perichymidia_mamrenner.html" class="species-link">Lejeunea perichymidia M.A.M.Renner</a></li>
+<li><a href="species/lejeunea_primordialis_hookf_taylor_taylor_ex_gottsche_lindenb_nees.html" class="species-link">Lejeunea primordialis (Hook.f. &amp; Taylor) Taylor ex Gottsche, Lindenb. &amp; Nees</a></li>
+<li><a href="species/lejeunea_subelobata_carrington_pearson.html" class="species-link">Lejeunea subelobata Carrington &amp; Pearson</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Microlejeunea (Spruce) Steph.</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/microlejeunea_latitans_hookf_taylor_heinrichs_schfverw_pcs_sdong.html" class="species-link">Microlejeunea latitans (Hook.f. &amp; Taylor) Heinrichs, Schäf-Verw., Pócs &amp; S.Dong</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Siphonolejeunea Herzog</span> <span class="count-badge">5</span></summary>
+<ul class="species-list">
+<li><a href="species/siphonolejeunea_bidentata_bmthiers_mamrenner.html" class="species-link">Siphonolejeunea bidentata (B.M.Thiers) M.A.M.Renner</a></li>
+<li><a href="species/siphonolejeunea_hamata_grolle_mamrenner.html" class="species-link">Siphonolejeunea hamata (Grolle) M.A.M.Renner</a></li>
+<li><a href="species/siphonolejeunea_jarmaniana_grolle_mamrenner.html" class="species-link">Siphonolejeunea jarmaniana (Grolle) M.A.M.Renner</a></li>
+<li><a href="species/siphonolejeunea_nudipes_hookf_taylor_herzog.html" class="species-link">Siphonolejeunea nudipes (Hook.f. &amp; Taylor) Herzog</a></li>
+<li><a href="species/siphonolejeunea_olgae_rmschust.html" class="species-link">Siphonolejeunea olgae R.M.Schust.</a></li>
+</ul>
+</details>
+</details>
+</details>
+<details><summary><span class="label">Porellineae R.M.Schust.</span> <span class="count-badge">6</span></summary>
+<details><summary><span class="label">Lepidolaenaceae Nakai</span> <span class="count-badge">6</span></summary>
+<details><summary><span class="label">Gackstroemia Trevis.</span> <span class="count-badge">2</span></summary>
+<ul class="species-list">
+<li><a href="species/gackstroemia_alpina_rmschust.html" class="species-link">Gackstroemia alpina R.M.Schust.</a></li>
+<li><a href="species/gackstroemia_weindorferi_herzog_grolle.html" class="species-link">Gackstroemia weindorferi (Herzog) Grolle</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Lepidolaena Dumort.</span> <span class="count-badge">4</span></summary>
+<ul class="species-list">
+<li><a href="species/lepidolaena_brachyclada_taylor_ex_lehm_trevis.html" class="species-link">Lepidolaena brachyclada (Taylor ex Lehm.) Trevis.</a></li>
+<li><a href="species/lepidolaena_clavigera_hook_dumort_ex_trevis.html" class="species-link">Lepidolaena clavigera (Hook.) Dumort. ex Trevis.</a></li>
+<li><a href="species/lepidolaena_reticulata_hookf_taylor_trevis.html" class="species-link">Lepidolaena reticulata (Hook.f. &amp; Taylor) Trevis.</a></li>
+<li><a href="species/lepidolaena_taylorii_gottsche_trevis.html" class="species-link">Lepidolaena taylorii (Gottsche) Trevis.</a></li>
+</ul>
+</details>
+</details>
+</details>
+<details><summary><span class="label">Radulineae R.M.Schust.</span> <span class="count-badge">10</span></summary>
+<details><summary><span class="label">Radulaceae Mull.Frib.</span> <span class="count-badge">10</span></summary>
+<details><summary><span class="label">Radula Dumort., nom. cons.</span> <span class="count-badge">10</span></summary>
+<ul class="species-list">
+<li><a href="species/radula_aneurismalis_hookf_taylor_nees_ex_gottsche_lindenb_nees.html" class="species-link">Radula aneurismalis (Hook.f. &amp; Taylor) Nees ex Gottsche, Lindenb. &amp; Nees</a></li>
+<li><a href="species/radula_australiana_kyamada.html" class="species-link">Radula australiana K.Yamada</a></li>
+<li><a href="species/radula_buccinifera_hookf_taylor_taylor_ex_gottsche_lindenb_nees.html" class="species-link">Radula buccinifera (Hook.f. &amp; Taylor) Taylor ex Gottsche, Lindenb. &amp; Nees</a></li>
+<li><a href="species/radula_demissa_mamrenner.html" class="species-link">Radula demissa M.A.M.Renner</a></li>
+<li><a href="species/radula_multiamentula_eahodgs.html" class="species-link">Radula multiamentula E.A.Hodgs.</a></li>
+<li><a href="species/radula_ratkowskyana_kyamada.html" class="species-link">Radula ratkowskyana K.Yamada</a></li>
+<li><a href="species/radula_sainsburyana_eahodgs_allison.html" class="species-link">Radula sainsburyana E.A.Hodgs. &amp; Allison</a></li>
+<li><a href="species/radula_strangulata_hookf_taylor.html" class="species-link">Radula strangulata Hook.f. &amp; Taylor</a></li>
+<li><a href="species/radula_tasmanica_steph.html" class="species-link">Radula tasmanica Steph</a></li>
+<li><a href="species/radula_weymouthiana_steph.html" class="species-link">Radula weymouthiana Steph.</a></li>
+</ul>
+</details>
+</details>
+</details>
+</details>
+</details>
+<details><summary><span class="label">Metzgeriidae Barthol.-Began</span> <span class="count-badge">27</span></summary>
+<details><summary><span class="label">Metzgeriales Chalaud</span> <span class="count-badge">27</span></summary>
+<details><summary><span class="label">—</span> <span class="count-badge">27</span></summary>
+<details><summary><span class="label">Aneuraceae H.Klinggr.</span> <span class="count-badge">18</span></summary>
+<details><summary><span class="label">Aneura Dumort.</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/aneura_rodwayi_hewson.html" class="species-link">Aneura rodwayi Hewson</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Lobatiriccardia (Mizut. &amp; S.Hatt.) Furuki</span> <span class="count-badge">3</span></summary>
+<ul class="species-list">
+<li><a href="species/lobatiriccardia_alterniloba_hookf_taylor_furuki.html" class="species-link">Lobatiriccardia alterniloba (Hook.f. &amp; Taylor) Furuki</a></li>
+<li><a href="species/lobatiriccardia_alterniloba_var_gigantea_steph_nebel.html" class="species-link">Lobatiriccardia alterniloba var. gigantea (Steph.) Nebel</a></li>
+<li><a href="species/lobatiriccardia_alterniloba_var_robusta_rodway_nebel.html" class="species-link">Lobatiriccardia alterniloba var. robusta (Rodway) Nebel</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Riccardia Gray, nom. cons.</span> <span class="count-badge">14</span></summary>
+<ul class="species-list">
+<li><a href="species/riccardia_aequicellularis_steph_hewson.html" class="species-link">Riccardia aequicellularis (Steph.) Hewson</a></li>
+<li><a href="species/riccardia_alcicornis_hookf_taylor_trevis.html" class="species-link">Riccardia alcicornis (Hook.f. &amp; Taylor) Trevis.</a></li>
+<li><a href="species/riccardia_bipinnatifida_colenso_hewson.html" class="species-link">Riccardia bipinnatifida (Colenso) Hewson</a></li>
+<li><a href="species/riccardia_cochleata_hookf_taylor_kuntze7.html" class="species-link">Riccardia cochleata (Hook.f. &amp; Taylor) Kuntze7</a></li>
+<li><a href="species/riccardia_colensoi_steph_wmartin.html" class="species-link">Riccardia colensoi (Steph.) W.Martin</a></li>
+<li><a href="species/riccardia_crassa_schwgr_cmassal.html" class="species-link">Riccardia crassa (Schwägr.) C.Massal.</a></li>
+<li><a href="species/riccardia_eriocaula_hook_besch_cmassal.html" class="species-link">Riccardia eriocaula (Hook.) Besch. &amp; C.Massal.</a></li>
+<li><a href="species/riccardia_gracilis_steph_rmschust.html" class="species-link">Riccardia gracilis (Steph.) R.M.Schust.</a></li>
+<li><a href="species/riccardia_lobulata_colenso_eahodgs.html" class="species-link">Riccardia lobulata (Colenso) E.A.Hodgs.</a></li>
+<li><a href="species/riccardia_longiflora_steph_hewson.html" class="species-link">Riccardia longiflora (Steph.) Hewson</a></li>
+<li><a href="species/riccardia_nitida_colenso_eahodgs.html" class="species-link">Riccardia nitida (Colenso) E.A.Hodgs.</a></li>
+<li><a href="species/riccardia_prehensilis_hookf_taylor_cmassal.html" class="species-link">Riccardia prehensilis (Hook.f. &amp; Taylor) C.Massal.</a></li>
+<li><a href="species/riccardia_rupicola_steph_hewson.html" class="species-link">Riccardia rupicola (Steph.) Hewson</a></li>
+<li><a href="species/riccardia_wattsiana_steph_hewson.html" class="species-link">Riccardia wattsiana (Steph.) Hewson</a></li>
+</ul>
+</details>
+</details>
+<details><summary><span class="label">Metzgeriaceae H.Klinggr.</span> <span class="count-badge">9</span></summary>
+<details><summary><span class="label">Metzgeria Raddi</span> <span class="count-badge">8</span></summary>
+<ul class="species-list">
+<li><a href="species/metzgeria_australis_steph.html" class="species-link">Metzgeria australis Steph.</a></li>
+<li><a href="species/metzgeria_densiseta_steph.html" class="species-link">Metzgeria densiseta Steph.</a></li>
+<li><a href="species/metzgeria_furcata_l_dumort.html" class="species-link">Metzgeria furcata (L.) Dumort</a></li>
+<li><a href="species/metzgeria_leptoneura_spruce.html" class="species-link">Metzgeria leptoneura Spruce</a></li>
+<li><a href="species/metzgeria_nitida_mitt.html" class="species-link">Metzgeria nitida Mitt.</a></li>
+<li><a href="species/metzgeria_rigida_lindb.html" class="species-link">Metzgeria rigida Lindb.</a></li>
+<li><a href="species/metzgeria_saccata_mitt.html" class="species-link">Metzgeria saccata Mitt</a></li>
+<li><a href="species/metzgeria_submarginata_mlso.html" class="species-link">Metzgeria submarginata M.L.So</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Vandiemenia Hewson</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/vandiemenia_ratkowskyana_hewson_as_ratkowskiana.html" class="species-link">Vandiemenia ratkowskyana Hewson, as ratkowskiana</a></li>
+</ul>
+</details>
+</details>
+</details>
+</details>
+</details>
+<details><summary><span class="label">Pelliidae He-Nygren, Juslen, Ahonen, Glenny &amp; Piipo</span> <span class="count-badge">14</span></summary>
+<details><summary><span class="label">Fossombroniales Schljakov</span> <span class="count-badge">5</span></summary>
+<details><summary><span class="label">Fossombroniineae R.M.Schust. ex Stotler &amp; Crand.-Stotl.</span> <span class="count-badge">5</span></summary>
+<details><summary><span class="label">Fossombroniaceae Hazsl.</span> <span class="count-badge">5</span></summary>
+<details><summary><span class="label">Fossombronia Raddi</span> <span class="count-badge">5</span></summary>
+<ul class="species-list">
+<li><a href="species/fossombronia_altilamellosa_gamscott_dcpike_ex_cargill.html" class="species-link">Fossombronia altilamellosa G.A.M.Scott &amp; D.C.Pike ex Cargill</a></li>
+<li><a href="species/fossombronia_australis_mitt.html" class="species-link">Fossombronia australis Mitt.</a></li>
+<li><a href="species/fossombronia_dentata_steph.html" class="species-link">Fossombronia dentata Steph.</a></li>
+<li><a href="species/fossombronia_intestinalis_taylor.html" class="species-link">Fossombronia intestinalis Taylor</a></li>
+<li><a href="species/fossombronia_pusilla_l_nees.html" class="species-link">Fossombronia pusilla (L.) Nees</a></li>
+</ul>
+</details>
+</details>
+</details>
+</details>
+<details><summary><span class="label">Pallaviciniales W.Frey &amp; M.Stech</span> <span class="count-badge">9</span></summary>
+<details><summary><span class="label">Pallaviciniineae R.M.Schust.</span> <span class="count-badge">9</span></summary>
+<details><summary><span class="label">Hymenophytaceae R.M.Schust.</span> <span class="count-badge">2</span></summary>
+<details><summary><span class="label">Hymenophyton Dumort.</span> <span class="count-badge">2</span></summary>
+<ul class="species-list">
+<li><a href="species/hymenophyton_flabellatum_labill_dumort_ex_trevis.html" class="species-link">Hymenophyton flabellatum (Labill.) Dumort. ex Trevis</a></li>
+<li><a href="species/hymenophyton_leptopodum_hookf_taylor_aevans.html" class="species-link">Hymenophyton leptopodum (Hook.f. &amp; Taylor) A.Evans</a></li>
+</ul>
+</details>
+</details>
+<details><summary><span class="label">Pallaviciniaceae Mig.</span> <span class="count-badge">7</span></summary>
+<details><summary><span class="label">Pallavicinia Gray, nom. cons.</span> <span class="count-badge">3</span></summary>
+<ul class="species-list">
+<li><a href="species/pallavicinia_lyellii_hook_gray.html" class="species-link">Pallavicinia lyellii (Hook.) Gray</a></li>
+<li><a href="species/pallavicinia_rubristipa_schiffn.html" class="species-link">Pallavicinia rubristipa Schiffn.</a></li>
+<li><a href="species/pallavicinia_xiphoides_hookf_taylor_trevis.html" class="species-link">Pallavicinia xiphoides (Hook.f. &amp; Taylor) Trevis.</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Podomitrium Mitt.</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/podomitrium_phyllanthus_hook_mitt.html" class="species-link">Podomitrium phyllanthus (Hook.) Mitt.</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Symphyogyna Nees &amp; Mont.</span> <span class="count-badge">3</span></summary>
+<ul class="species-list">
+<li><a href="species/symphyogyna_interrupta_carrington_pearson.html" class="species-link">Symphyogyna interrupta Carrington &amp; Pearson</a></li>
+<li><a href="species/symphyogyna_podophylla_thunb_mont_nees.html" class="species-link">Symphyogyna podophylla (Thunb.) Mont. &amp; Nees</a></li>
+<li><a href="species/symphyogyna_rhodina_hookf_taylor_taylor_ex_gottsche_lindenb_nees.html" class="species-link">Symphyogyna rhodina (Hook.f. &amp; Taylor) Taylor ex Gottsche, Lindenb. &amp; Nees</a></li>
+</ul>
+</details>
+</details>
+</details>
+</details>
+</details>
+</details>
+<details><summary><span class="label">Marchantiopsida Cronquist, Takht. &amp; W.Zimm.</span> <span class="count-badge">27</span></summary>
+<details><summary><span class="label">Marchantiidae Engl.</span> <span class="count-badge">27</span></summary>
+<details><summary><span class="label">Lunulariales D.G.Long</span> <span class="count-badge">1</span></summary>
+<details><summary><span class="label">—</span> <span class="count-badge">1</span></summary>
+<details><summary><span class="label">Lunulariaceae H.Klinggr.</span> <span class="count-badge">1</span></summary>
+<details><summary><span class="label">Lunularia Adans.</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/lunularia_cruciata_l_dumort.html" class="species-link">Lunularia cruciata (L.) Dumort.</a></li>
+</ul>
+</details>
+</details>
+</details>
+</details>
+<details><summary><span class="label">Marchantiales Limpr.</span> <span class="count-badge">26</span></summary>
+<details><summary><span class="label">—</span> <span class="count-badge">26</span></summary>
+<details><summary><span class="label">Aytoniaceae Cavers</span> <span class="count-badge">4</span></summary>
+<details><summary><span class="label">Asterella P.Beauv., nom. cons.</span> <span class="count-badge">4</span></summary>
+<ul class="species-list">
+<li><a href="species/asterella_australis_hookf_taylor_verd_ex_gamscott_jabradshaw.html" class="species-link">Asterella australis (Hook.f. &amp; Taylor) Verd. ex G.A.M.Scott &amp; J.A.Bradshaw</a></li>
+<li><a href="species/asterella_conocephala_steph_rmschust.html" class="species-link">Asterella conocephala (Steph.) R.M.Schust.</a></li>
+<li><a href="species/asterella_drummondii_taylor_rmschust_ex_dglong.html" class="species-link">Asterella drummondii (Taylor) R.M.Schust. ex D.G.Long</a></li>
+<li><a href="species/asterella_tasmanica_steph_rmschust.html" class="species-link">Asterella tasmanica (Steph.) R.M.Schust.</a></li>
+</ul>
+</details>
+</details>
+<details><summary><span class="label">Marchantiaceae Lindl.</span> <span class="count-badge">4</span></summary>
+<details><summary><span class="label">Marchantia L.</span> <span class="count-badge">4</span></summary>
+<ul class="species-list">
+<li><a href="species/marchantia_berteroana_lehm_lindenb.html" class="species-link">Marchantia berteroana Lehm. &amp; Lindenb.</a></li>
+<li><a href="species/marchantia_foliacea_mitt.html" class="species-link">Marchantia foliacea Mitt.</a></li>
+<li><a href="species/marchantia_pileata_mitt.html" class="species-link">Marchantia pileata Mitt.</a></li>
+<li><a href="species/marchantia_polymorpha_l.html" class="species-link">Marchantia polymorpha L.</a></li>
+</ul>
+</details>
+</details>
+<details><summary><span class="label">Ricciaceae Rchb.</span> <span class="count-badge">17</span></summary>
+<details><summary><span class="label">Riccia L., nom. cons.</span> <span class="count-badge">15</span></summary>
+<ul class="species-list">
+<li><a href="species/riccia_acutisulca_steph.html" class="species-link">Riccia acutisulca Steph.</a></li>
+<li><a href="species/riccia_crozalsii_levier.html" class="species-link">Riccia crozalsii Levier</a></li>
+<li><a href="species/riccia_crustata_trab_ex_grolle.html" class="species-link">Riccia crustata Trab. ex Grolle</a></li>
+<li><a href="species/riccia_crystallina_l.html" class="species-link">Riccia crystallina L.</a></li>
+<li><a href="species/riccia_duplex_lorb_ex_mullfrib.html" class="species-link">Riccia duplex Lorb. ex Mull.Frib.</a></li>
+<li><a href="species/riccia_duplex_var_duplex.html" class="species-link">Riccia duplex var. duplex</a></li>
+<li><a href="species/riccia_multifida_var_multifida.html" class="species-link">Riccia multifida var. multifida</a></li>
+<li><a href="species/riccia_nigrella_dc.html" class="species-link">Riccia nigrella DC.</a></li>
+<li><a href="species/riccia_papulosa_steph_steph.html" class="species-link">Riccia papulosa (Steph.) Steph.</a></li>
+<li><a href="species/riccia_papulosa_var_papulosa.html" class="species-link">Riccia papulosa var. papulosa</a></li>
+<li><a href="species/riccia_sorocarpa_bisch.html" class="species-link">Riccia sorocarpa Bisch.</a></li>
+<li><a href="species/riccia_spongiosula_nathalang.html" class="species-link">Riccia spongiosula Na-Thalang</a></li>
+<li><a href="species/riccia_subbifurca_warnst_ex_croz.html" class="species-link">Riccia subbifurca Warnst. ex Croz.</a></li>
+<li><a href="species/riccia_tasmanica_steph_ex_rodway.html" class="species-link">Riccia tasmanica Steph. ex Rodway</a></li>
+<li><a href="species/riccia_weymouthiana_steph_ex_rodway.html" class="species-link">Riccia weymouthiana Steph. ex Rodway</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Ricciocarpos Corda</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/ricciocarpos_natans_l_corda.html" class="species-link">Ricciocarpos natans (L.) Corda</a></li>
+</ul>
+</details>
+<details><summary><span class="label">Saccogynidium Grolle</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/saccogynidium_decurvum_mitt_grolle.html" class="species-link">Saccogynidium decurvum (Mitt.) Grolle</a></li>
+</ul>
+</details>
+</details>
+<details><summary><span class="label">Targioniaceae Dumort.</span> <span class="count-badge">1</span></summary>
+<details><summary><span class="label">Targionia L.</span> <span class="count-badge">1</span></summary>
+<ul class="species-list">
+<li><a href="species/targionia_hypophylla_l.html" class="species-link">Targionia hypophylla L.</a></li>
+</ul>
+</details>
+</details>
+</details>
+</details>
+</details>
+</details>
+</details>
+      </div>
+
+      <p class="note">Note: species links point to <code>/species/&lt;slug&gt;.html</code>. Create these pages at your convenience. CSV encoding detected as: latin-1.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Christopher McCarthy</p>
+  </footer>
+
+  <script>
+// Expand / Collapse All and Filter functionality
+(function(){
+  const filterInput = document.getElementById('treeFilter');
+  const clearBtn = document.getElementById('clearFilter');
+  const expandBtn = document.getElementById('expandAll');
+  const collapseBtn = document.getElementById('collapseAll');
+  const tree = document.getElementById('treeRoot');
+
+  function normalize(s){ return (s||"").toLowerCase(); }
+
+  function detailsDescendants(el){
+    return Array.from(el.querySelectorAll(':scope > details'));
+  }
+
+  function nodeMatches(detailsEl, q){
+    if(!q) return true;
+    const summary = detailsEl.querySelector(':scope > summary');
+    if(summary && normalize(summary.textContent).includes(q)) return true;
+    // match species anywhere under this node
+    const lis = detailsEl.querySelectorAll('ul.species-list > li');
+    for(const li of lis){
+      if(normalize(li.textContent).includes(q)) return true;
+    }
+    // match any child detail
+    const kids = detailsDescendants(detailsEl);
+    for(const k of kids){
+      if(nodeMatches(k, q)) return true;
+    }
+    return false;
+  }
+
+  function applyFilter(){
+    const q = normalize(filterInput.value.trim());
+    const roots = Array.from(tree.children).filter(el => el.tagName.toLowerCase()==='details');
+    for(const d of roots){
+      const match = nodeMatches(d, q);
+      d.style.display = match ? '' : 'none';
+      if(q && match){
+        // open all matched branches for visibility
+        d.open = true;
+        // open all descendants that match
+        d.querySelectorAll('details').forEach(child => {
+          if(nodeMatches(child, q)) child.open = true;
+        });
+        // open ancestors
+        let p = d.parentElement;
+        while(p && p.closest && (p = p.closest('details'))){
+          p.open = true;
+        }
+      }else if(!q){
+        d.open = false; // default collapsed
+        d.querySelectorAll('details').forEach(child => child.open = false);
+      }
+    }
+  }
+
+  function expandAll(){
+    tree.querySelectorAll('details').forEach(d => d.open = true);
+  }
+  function collapseAll(){
+    tree.querySelectorAll('details').forEach(d => d.open = false);
+  }
+
+  filterInput.addEventListener('input', applyFilter);
+  clearBtn.addEventListener('click', ()=>{ filterInput.value=''; applyFilter(); filterInput.focus(); });
+  expandBtn.addEventListener('click', expandAll);
+  collapseBtn.addEventListener('click', collapseAll);
+
+  // initial collapsed state
+  collapseAll();
+})();
+</script>
+</body>
+</html>

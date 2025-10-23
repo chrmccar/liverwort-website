@@ -1,0 +1,238 @@
+/* -----------------------------
+   Liverworts of Tasmania
+   Complete style.css
+   ----------------------------- */
+
+/* --- Base colours and variables --- */
+:root {
+  --ink: #222;
+  --paper: #faf9f7;
+  --brand: #2e5c45;
+  --muted: #e3e1da;
+  --card: #ffffff;
+  --ring: rgba(46, 92, 69, 0.25);
+}
+
+/* --- General resets --- */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Georgia, serif;
+  line-height: 1.55;
+}
+
+/* --- Containers --- */
+.container {
+  padding: 2rem 1.25rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* --- Header --- */
+.site-header {
+  background: var(--brand);
+  color: #fff;
+  text-align: center;
+  padding: 2.25rem 1.25rem;
+}
+
+.site-header h1 {
+  margin: 0.1rem 0 0.4rem;
+  font-size: 2rem;
+  letter-spacing: 0.3px;
+}
+
+.site-header p {
+  margin: 0;
+  opacity: 0.95;
+}
+
+/* --- Footer --- */
+.site-footer {
+  background: var(--muted);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.95rem;
+}
+
+/* --- Headings --- */
+h2 {
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+}
+
+/* --- Taxonomy section --- */
+#taxonomy-nav {
+  text-align: center;
+}
+
+/* --- Taxonomy list --- */
+.taxonomy-list {
+  list-style: none;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* --- Taxonomy buttons --- */
+.taxon-btn {
+  width: 100%;
+  text-align: left;
+  padding: 1rem 1.25rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  border: 1px solid #dcd9d1;
+  border-radius: 14px;
+  background: var(--card);
+  color: var(--ink);
+  cursor: not-allowed;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04),
+              0 6px 14px rgba(0, 0, 0, 0.03);
+  transition: all 0.2s ease;
+}
+
+.taxon-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.04),
+              0 10px 22px rgba(0, 0, 0, 0.05);
+  border-color: #d0cdc4;
+}
+
+.taxon-btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px var(--ring);
+  border-color: #c9c6bd;
+}
+
+/* --- Responsive adjustments --- */
+@media (max-width: 640px) {
+  .container {
+    padding: 1.5rem;
+  }
+  
+  .site-header h1 {
+    font-size: 1.7rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .taxon-btn {
+    font-size: 1rem;
+    padding: 0.9rem 1rem;
+  }
+}
+
+/* --- Top navigation bar under title --- */
+.top-nav {
+  margin-top: 1.2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.nav-btn {
+  display: inline-block;
+  background: #ffffff;
+  color: var(--brand);
+  border: 1px solid #dcd9d1;
+  border-radius: 8px;
+  padding: 0.6rem 1.4rem;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.nav-btn:hover {
+  background: var(--brand);
+  color: #fff;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+/* --- Tree: search and status --- */
+.tree-search{
+  display:flex;
+  gap:.5rem;
+  align-items:center;
+  margin:.5rem 0 1rem;
+}
+.tree-search input{
+  flex:1;
+  padding:.6rem .8rem;
+  border:1px solid #dcd9d1;
+  border-radius:8px;
+  background:#fff;
+  font-size:1rem;
+}
+.tree-search button{
+  padding:.55rem 1rem;
+  border:1px solid #dcd9d1;
+  border-radius:8px;
+  background:#fff;
+  font-weight:600;
+  cursor:pointer;
+  transition:all .15s ease;
+}
+.tree-search button:hover{
+  background:var(--brand);
+  color:#fff;
+}
+
+.tree-status{
+  font-size:.95rem;
+  color:#444;
+  opacity:.85;
+  margin-bottom:.5rem;
+}
+
+/* --- Tree visuals --- */
+.tree details{
+  border:1px solid #dcd9d1;
+  background:#fff;
+  border-radius:12px;
+  padding:.6rem .9rem;
+  margin:.5rem 0;
+  box-shadow:0 1px 0 rgba(0,0,0,.04), 0 6px 14px rgba(0,0,0,.03);
+}
+
+.tree summary{
+  cursor:pointer;
+  font-weight:700;
+  list-style:none;
+}
+
+.tree summary::-webkit-details-marker{ display:none; }
+.tree summary::before{
+  content:"▸";
+  display:inline-block;
+  width:1rem;
+  margin-right:.3rem;
+  transform:translateY(-1px) rotate(0deg);
+  transition:transform .15s ease;
+  opacity:.8;
+}
+.tree details[open] > summary::before{
+  transform:translateY(-1px) rotate(90deg);
+}
+
+.species-list{
+  margin:.4rem 0 .2rem 1.4rem;
+  padding-left:1rem;
+}
+.species-list li{
+  padding:.12rem 0;
+}
